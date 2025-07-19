@@ -1,8 +1,8 @@
-# Stock Price Prediction using PyTorch LSTM
+Stock Price Prediction using PyTorch LSTM
 
 A deep learning project that predicts stock prices using Long Short-Term Memory (LSTM) networks implemented in PyTorch. This project demonstrates time series forecasting, neural network architecture design, and financial data analysis.
 
-## 🚀 Features
+ Features
 
 - **Real-time Data**: Fetches live stock data using Yahoo Finance API
 - **LSTM Neural Network**: Custom PyTorch implementation with dropout regularization
@@ -10,7 +10,7 @@ A deep learning project that predicts stock prices using Long Short-Term Memory 
 - **GPU Support**: Automatic CUDA detection and utilization
 - **Scalable Architecture**: Easy to modify for different stocks and parameters
 
-## 📊 Model Architecture
+Model Architecture
 
 ```
 LSTM(input=1, hidden=50, layers=2) → Dropout(0.2) → Dense(1)
@@ -21,17 +21,17 @@ LSTM(input=1, hidden=50, layers=2) → Dropout(0.2) → Dense(1)
 - **Layers**: 2 LSTM layers with dropout
 - **Output**: Next day's closing price
 
-## 🛠 Installation
+Installation
 
 ```bash
-git clone https://github.com/yourusername/stock-price-prediction
+git clone https://github.com/shatansh0710/stock-price-prediction
 cd stock-price-prediction
 pip install -r requirements.txt
 ```
 
-## 🔧 Usage
+Usage
 
-### Basic Usage
+Basic Usage
 ```python
 from stock_predictor import StockPredictor
 
@@ -47,7 +47,7 @@ predictor.evaluate_model()
 predictor.plot_results()
 ```
 
-### Custom Parameters
+Custom Parameters
 ```python
 # Different stock and parameters
 predictor = StockPredictor(
@@ -69,14 +69,14 @@ predictor.train_model(
 )
 ```
 
-## 📈 Results
+Results
 
 The model achieves:
 - **Training RMSE**: ~$2-6 (depending on stock volatility)
 - **Test RMSE**: ~$4-10 (depending on market conditions)
 - **Convergence**: Usually within 70-100 epochs
 
-### Sample Output
+Output after first run:-
 Training model...
 Epoch [20/100], Loss: 0.009672
 Epoch [40/100], Loss: 0.007335
@@ -90,26 +90,29 @@ Train RMSE: $5.99
 Test RMSE: $10.00
 Train MAE: $4.86
 Test MAE: $7.20
-## 🏗 Project Structure
+Project Structure
 
 ```
+the evaluation figure generated:-
+![alt text](AAPL_prediction-1.png)
 stock-price-prediction/
 │
 ├── stock_predictor.py      # Main implementation
 ├── requirements.txt        # Dependencies
 ├── README.md              # This file
 └── AAPL_prediction.png    # Generated plots
+└──AAPL_lstm_model.pth     #output model
 ```
 
-## 🔍 Key Features for Interviews
+Key Features
 
-1. **Custom PyTorch Implementation**: Shows deep understanding of neural networks
-2. **Proper Data Pipeline**: Demonstrates data preprocessing and feature engineering
-3. **Model Evaluation**: Comprehensive metrics and visualization
-4. **Clean Code**: Modular, well-documented, and reusable
-5. **Real-world Application**: Uses actual financial data and practical problem
+1. **Custom PyTorch Implementation**
+2. **Proper Data Pipeline**
+3. **Model Evaluation**
+4. **Clean Code**
+5. **Real-world Application**
 
-## 🎯 Technical Highlights
+Technical Highlights
 
 - **Time Series Preprocessing**: Sliding window approach with proper train/test split
 - **LSTM Architecture**: Handles vanishing gradient problem in sequential data
@@ -117,7 +120,6 @@ stock-price-prediction/
 - **Scalability**: Easy to extend for multiple features or different architectures
 - **Visualization**: Professional plots for model analysis
 
-## 🚀 Quick Start
 
 ```bash
 python stock_predictor.py
@@ -130,27 +132,24 @@ This will:
 4. Create visualization plots
 5. Save the trained model
 
-## 🔧 Customization
+Customization
 
-### Different Stocks
+Different Stocks
 ```python
 predictor = StockPredictor(symbol='GOOGL')  # Google
 predictor = StockPredictor(symbol='MSFT')   # Microsoft
 ```
 
-### Extended Features
+Extended Features
 - Add volume, moving averages, or technical indicators
 - Implement attention mechanisms
 - Use transformer architectures
 - Multi-step ahead prediction
 
-## 📝 License
 
 MIT License - feel free to use for personal projects and learning.
 
-## 🤝 Contributing
+Contributing
 
 This is a learning project, but suggestions and improvements are welcome!
 
----
-**Built with PyTorch** 🔥 | **Real-time Data** 📊 | **Production Ready** 🚀

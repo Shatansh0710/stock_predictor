@@ -92,9 +92,10 @@ Train MAE: $4.86
 Test MAE: $7.20
 Project Structure
 
-```
 the evaluation figure generated:-
 ![AAPL Stock Price Prediction](AAPL_prediction.png)
+```
+
 stock-price-prediction/
 │
 ├── stock_predictor.py      # Main implementation

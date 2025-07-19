@@ -94,7 +94,7 @@ Project Structure
 
 ```
 the evaluation figure generated:-
-![alt text](AAPL_prediction-1.png)
+![AAPL Stock Price Prediction](AAPL_prediction.png)
 stock-price-prediction/
 │
 ├── stock_predictor.py      # Main implementation
